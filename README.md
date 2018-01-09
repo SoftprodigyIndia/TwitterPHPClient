@@ -22,4 +22,5 @@ Then it will automatically create table and fields.
 ## Step 4 :
 Enjoy tweets :)
 
-*Some Design needs to be modify , it is working properly only with functionality. This has been developed in core PHP.*
+*Some design might require modifications, it is working properly only in terms of functionality at the moment.
+This has been developed in core PHP.*
