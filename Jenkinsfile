@@ -7,7 +7,7 @@ pipeline {
         test = 'test'
       }
       steps {
-        git(changelog: true, url: 'https://github.com/softprodigyofficial/NCGPA.git', branch: 'develop')
+        git(changelog: true, url: 'https://github.com/SoftprodigyIndia/TwitterPHPClient', branch: 'master')
       }
     }
     stage('error') {
