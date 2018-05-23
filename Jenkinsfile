@@ -1,18 +1,8 @@
 pipeline {
-  agent {
-    dockerfile {
-      filename 'dockerfile/ubuntu'
-    }
-
-  }
+  agent any
   stages {
     stage('build') {
-      agent {
-        docker {
-          image 'dockerfile/ubuntu'
-        }
-
-      }
+      agent any
       environment {
         test = 'test'
       }
@@ -21,6 +11,10 @@ pipeline {
       }
     }
     stage('error') {
+      agent any
+      environment {
+        test = 'test'
+      }
       steps {
         ws(dir: 'ppp') {
           build(job: 'pppp', propagate: true, wait: true, quietPeriod: 1)
