@@ -15,7 +15,7 @@ pipeline {
         git(changelog: true, url: 'https://github.com/softprodigyofficial/NCGPA.git', branch: 'develop')
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         ws(dir: 'ppp') {
           build(job: 'pppp', propagate: true, wait: true, quietPeriod: 1)
